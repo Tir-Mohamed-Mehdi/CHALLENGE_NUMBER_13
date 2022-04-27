@@ -181,6 +181,10 @@ button.mac {
   padding: 5rem 0;
 }
 
+.footer .container {
+  margin: 0 auto;
+}
+
 .footer img {
   width: 5rem;
   height: 5rem;
