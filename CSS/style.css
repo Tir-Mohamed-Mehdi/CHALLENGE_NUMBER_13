@@ -1,0 +1,161 @@
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Strong-Cyan: #26baa4;
+  --Light-Blue: #6173ff;
+  --Dark-Grayish-Blue: #4c545d;
+  --Grayish-Blue: #9fabb2;
+  --shadow-cyan: #26baa454;
+  --shadow-light-blue: #6173ff54;
+
+  --font-size: 1.6rem;
+
+  --font-family: "Bai Jamjuree", sans-serif;
+
+  --font-weight-400: 400;
+  --font-weight-600: 600;
+
+  --margin-bottom: 15rem;
+}
+
+body {
+  font-family: var(--font-family);
+  background-image: url(/images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/*- ----------------*/
+/*- GLOBAL COMPONENTS */
+
+h2.rs__head {
+  font-size: 2.5rem;
+  color: var(--Dark-Grayish-Blue);
+  margin-bottom: 1.5rem;
+}
+h2.rs__head + p {
+  color: var(--Grayish-Blue);
+  font-size: var(--font-size);
+  line-height: 1.5;
+  margin-bottom: 4rem;
+}
+
+/* _______________ */
+
+.buttons > button {
+  display: block;
+  margin-inline: auto;
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  width: 100%;
+  padding: 1.5rem 0;
+  border-radius: 3rem;
+  font-size: 1.6rem;
+}
+
+button.ios {
+  background-color: var(--Strong-Cyan);
+  margin-bottom: 2rem;
+  box-shadow: 0 7px 15px var(--shadow-cyan);
+}
+
+button.mac {
+  background-color: var(--Light-Blue);
+  box-shadow: 0 7px 15px var(--shadow-light-blue);
+}
+
+/*- ----------------*/
+
+.container {
+  max-width: 35rem;
+  margin: 11rem auto;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+/** this is the first section styling */
+
+.main {
+  margin-bottom: var(--margin-bottom);
+}
+
+.main img {
+  margin-bottom: 6rem;
+}
+
+.main > h2 {
+  font-size: 3rem;
+}
+
+.main > h2 + p {
+  margin-bottom: 6rem;
+}
+
+/** this is the second section styling */
+
+.hint {
+  margin-bottom: var(--margin-bottom);
+}
+
+.hint > img {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.hint .head > P {
+  margin-bottom: 6rem;
+}
+
+/** this is the third section styling */
+
+.access {
+  margin-bottom: calc(var(--margin-bottom) - 7rem);
+}
+
+.access img {
+  width: 100%;
+}
+
+.access > h2 + p {
+  margin-bottom: 6rem;
+}
+
+/** this is the fourth section styling */
+
+.super {
+  margin-bottom: calc(var(--margin-bottom) - 6rem);
+}
+
+.super > div.card h2 {
+  font-size: 2.2rem;
+}
+
+.super > div.card img {
+  width: 3.5rem;
+  margin-bottom: 3rem;
+}
+
+/** this is the fifth section styling */
+
+.logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.logos img {
+  width: 30%;
+}
